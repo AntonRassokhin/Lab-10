@@ -12,7 +12,7 @@ namespace Lab_10
         {
             Console.WriteLine("Введите угол в формате: градусы, минуты, секунды");
             Angle angle = new Angle(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
-            angle.Answer();
+            angle.ToRadians();
             Console.ReadKey();
         }
     }
@@ -99,7 +99,7 @@ namespace Lab_10
             return new Angle(gradus, min, sec);
         }                  
                 
-        public void Answer()
+        public void ToRadians()
         {
             if (f == false)
             {
